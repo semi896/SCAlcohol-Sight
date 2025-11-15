@@ -1,0 +1,10 @@
+<script>
+  // Protege la página: si no existe la llave, redirige al login
+  (function () {
+    const logged = localStorage.getItem("scalcohol_logged");
+    if (!logged) {
+      // No logueado → ir a login
+      window.location.href = "login.html";
+    }
+  })();
+</script>
